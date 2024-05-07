@@ -4,6 +4,7 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/render"
 	"github.com/mariopandapotansimarmata/go-api-responsi-mobile/data"
@@ -11,6 +12,7 @@ import (
 
 func main() {
 	r := gin.Default()
+	r.Use(cors.Default())
 
 	//List League
 	r.GET("/", func(c *gin.Context) {
@@ -22,7 +24,6 @@ func main() {
 		paramIdLeague := c.Params.ByName("id_league")
 		idLeague, err := strconv.Atoi(paramIdLeague)
 		if err != nil {
-
 			panic(err)
 		}
 

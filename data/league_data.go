@@ -31,7 +31,7 @@ var ListLeague = []model.League{
 		IdLeague:        4,
 		LeagueName:      "Serie A",
 		Country:         "Italy",
-		LogoLeagueUrl:   "https://www.fifplay.com/img/public/serie-a-logo-transparent.png",
+		LogoLeagueUrl:   "https://2.bp.blogspot.com/-W1C5VkHUfZ0/XNVkWcPkeVI/AAAAAAAB7SA/MHIL4VRPGNIjW16Iy54aoS5jLEzMBOO9gCLcBGAs/s1600/all-new-serie-a-logo%2B%25282%2529.jpg",
 		LeaderStandings: "Juventus",
 		Teams:           ListSerieATeams,
 	},
