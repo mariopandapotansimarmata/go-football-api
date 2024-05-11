@@ -13,6 +13,7 @@ import (
 func main() {
 	r := gin.Default()
 	r.Use(cors.Default())
+	r.StaticFile("/favicon.ico", "./favicon.ico")
 
 	//List League
 	r.GET("/", func(c *gin.Context) {
