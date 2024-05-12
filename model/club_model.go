@@ -1,7 +1,7 @@
 package model
 
 type Club struct {
-	IdCLub      byte
+	IdClub      byte
 	NameClub    string
 	LogoClubUrl string
 	StadiumName string
